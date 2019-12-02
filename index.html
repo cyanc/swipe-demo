@@ -1,0 +1,84 @@
+<!DOCTYPE HTML> 
+<html>
+<head>
+<title>Customer presentation Demo</title>
+<meta http-equiv="X-UA-Compatible" content="IE=8">
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'/> 
+<link href='style.css' rel='stylesheet'/>
+<style>
+
+/* Swipe 2 required styles */
+
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap > div {
+  float:left;
+  width:100%;
+  position: relative;
+}
+
+/* END required styles */
+
+</style>
+
+</head>
+<body>
+
+
+<div id='mySwipe' style='width:720px; height:405px; margin:0 auto' class='swipe'>
+  <div class='swipe-wrap'>
+    <div><img src="slides/Slide1.png"></div>
+    <div><img src="slides/Slide2.png"></div>
+    <div><img src="slides/Slide3.png"></div>
+    <div><img src="slides/Slide4.png"></div>
+    <div><img src="slides/Slide5.png"></div>
+    <div><img src="slides/Slide6.png"></div>
+    <div><img src="slides/Slide7.png"></div>
+    <div><img src="slides/Slide8.png"></div>
+    <div><img src="slides/Slide9.png"></div>
+    <div><img src="slides/Slide10.png"></div>
+    <div><img src="slides/Slide11.png"></div>
+    <div><img src="slides/Slide12.png"></div>
+    <div><img src="slides/Slide13.png"></div>
+  </div>
+</div>
+
+
+
+<div style='text-align:center;padding-top:20px;'>
+  
+  <button onclick='mySwipe.prev()'>prev</button> 
+  <button onclick='mySwipe.next()'>next</button>
+
+</div>
+
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src='swipe.js'></script>
+<script>
+
+// pure JS
+var elem = document.getElementById('mySwipe');
+window.mySwipe = Swipe(elem, {
+  // startSlide: 4,
+  // auto: 3000,
+  // continuous: true,
+  // disableScroll: true,
+  // stopPropagation: true,
+  // callback: function(index, element) {},
+  // transitionEnd: function(index, element) {}
+});
+
+// with jQuery
+// window.mySwipe = $('#mySwipe').Swipe().data('Swipe');
+
+</script>
