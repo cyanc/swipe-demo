@@ -59,7 +59,7 @@ html, body {
 }
 
 /* Desktop Only Styles */
-@media only screen and (min-width: 1366px) {
+@media only screen and (min-width: 1367px) {
 
   /* Make sure buttons aren't displayed on devices up to the size of iPad Pro */
 .buttons-wrap {
