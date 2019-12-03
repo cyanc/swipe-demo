@@ -11,6 +11,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, del, dfn, em, 
 html {
     height  : 100%;
     overflow: hidden;
+    position: fixed;
 }
 
 body {
@@ -18,8 +19,9 @@ body {
   font-family:sans-serif;
   overflow: hidden;
   -webkit-overflow-scrolling: touch;
-  max-height: 960px;
-}
+  height  : 100%;
+  position: fixed;
+  }
 
 
 html, body {
