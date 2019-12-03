@@ -37,14 +37,14 @@ html, body {
 .swipe-wrap {
   overflow: hidden;
   position: relative;
-  max-height: 1024px;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
 }
 .swipe-wrap > div {
   float:left;
   width:100%;
   position: relative;
+  max-height: 1024px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 /* END required styles */
