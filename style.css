@@ -17,7 +17,7 @@ body {
   -webkit-text-size-adjust:none;
   font-family:sans-serif;
   height  : 100%;
-  overflow: auto;
+  overflow: hidden;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -42,9 +42,6 @@ html, body {
   float:left;
   width:100%;
   position: relative;
-  max-height: 1024px;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
 }
 
 /* END required styles */
